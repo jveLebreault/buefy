@@ -64,6 +64,18 @@
             "documentation/layout"
         ]
     },
+    "documentation/cascader": {
+        "title": "Cascader",
+        "subtitle": "Cascader is a multi menu similar to a dropdown",
+        "path": "/documentation/cascader",
+        "githubPath": "pages/components/cascader/Cascader.vue",
+        "menu": "documentation",
+        "breadcrumb": [
+            "/",
+            "documentation",
+            "documentation/cascader"
+        ]
+    },
     "documentation/collapse": {
         "title": "Collapse",
         "subtitle": "Collapse is a easy way to toggle what you want",

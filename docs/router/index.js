@@ -35,6 +35,7 @@ const router = new Router({
                 route('documentation/constructor-options', 'installation/ConstructorOptions'),
                 route('documentation/layout', 'Layout'),
                 route('documentation/icon', 'components/icon/Icon'),
+                route('documentation/cascader', 'components/cascader/Cascader'),
                 route('documentation/dropdown', 'components/dropdown/Dropdown'),
                 route('documentation/tooltip', 'components/tooltip/Tooltip'),
                 route('documentation/modal', 'components/modal/Modal'),
