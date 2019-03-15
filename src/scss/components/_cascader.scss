@@ -1,0 +1,14 @@
+.cascader {
+    @extend .dropdown;
+
+    &:hover {
+        .cascader-menu {
+            display: block;
+        }
+    }
+
+    .cascader-menu {
+        @extend .dropdown-menu;
+        display: none;
+    }
+}

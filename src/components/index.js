@@ -1,4 +1,5 @@
 import Autocomplete from './autocomplete'
+import Cascader from './cascader'
 import Checkbox from './checkbox'
 import Collapse from './collapse'
 import Datepicker from './datepicker'
@@ -27,6 +28,7 @@ import Upload from './upload'
 
 export {
     Autocomplete,
+    Cascader,
     Checkbox,
     Collapse,
     Datepicker,

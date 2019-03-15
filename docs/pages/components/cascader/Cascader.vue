@@ -1,14 +1,18 @@
 <template>
     <div>
-        {{msg}}
+        <Example :component="SimpleCascader" :code="SimpleCascaderCode"/>
     </div>
 </template>
 
 <script>
+import SimpleCascader from './examples/ExCascader';
+import SimpleCascaderCode from '!!raw-loader!./examples/ExCascader';
+
 export default {
     data() {
         return {
-            msg: 'HELLO FROM CASCADER COMPONENT'
+            SimpleCascader,
+            SimpleCascaderCode
         }
     }
 }
