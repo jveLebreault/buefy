@@ -1,6 +1,10 @@
 <template>
     <div>
-        <Example :component="SimpleCascader" :code="SimpleCascaderCode"/>
+        <Example :component="SimpleCascader" :code="SimpleCascaderCode">
+            <p>
+                Simple cascader
+            </p>
+        </Example>
     </div>
 </template>
 

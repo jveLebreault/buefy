@@ -1,6 +1,8 @@
 <template>
     <section>
         <b-cascader :menu="menu"/>
+
+        <b-cascader :menu="menu" hoverable/>
     </section>
 </template>
 

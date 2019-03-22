@@ -1,7 +1,7 @@
 .cascader {
     @extend .dropdown;
 
-    &:hover {
+    &.is-active, &.is-hoverable:hover {
         .cascader-menu {
             display: block;
         }
@@ -10,5 +10,18 @@
     .cascader-menu {
         @extend .dropdown-menu;
         display: none;
+    }
+
+    .cascader-content {
+        @extend .dropdown-content;
+    }
+
+    .cascader-item {
+        padding: 0.375rem 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: greenyellow;
+        }
     }
 }
