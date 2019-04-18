@@ -11,7 +11,8 @@ const menu = [
     'action1', 
     'action2', 
     {
-        label: 'action3'
+        label: 'action3 - dfsd fgvd gfdg fdgfr',
+        thing: ['action4', 'action5']
     }]
 
 export default {

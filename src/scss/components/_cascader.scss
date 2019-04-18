@@ -3,7 +3,10 @@
 
     &.is-active, &.is-hoverable:hover {
         .cascader-menu {
-            display: block;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            white-space: nowrap;
         }
     }
 
@@ -19,9 +22,15 @@
     .cascader-item {
         padding: 0.375rem 1rem;
         cursor: pointer;
+        text-align: justify;
+
+        .item-content {
+            justify-content: space-between;
+            align-items: baseline;
+        }
 
         &:hover {
-            background-color: greenyellow;
+            background-color: $background;
         }
     }
 }

@@ -11,14 +11,7 @@
         <transition name="fade">
             <div class="cascader-menu">
                 <div class="cascader-content">
-                    <slot>
-                        <div
-                            class="cascader-item"
-                            v-for="item in menu"
-                            :key="item.label || item">
-                            {{ item.label || item }}
-                        </div>
-                    </slot>
+                    <b-cascader-menu :items="menu" node="1"/>
                 </div>
             </div>
         </transition>
@@ -26,8 +19,15 @@
 </template>
 
 <script>
+import CascaderMenu from './CascaderMenu'
+
 export default {
     name: 'BCascader',
+
+    components: {
+        [CascaderMenu.name]: CascaderMenu
+    },
+
     props: {
         menu: {
             type: [Array, Object],
@@ -42,13 +42,30 @@ export default {
 
     data() {
         return {
-            isActive: false
+            isActive: false,
+            selectedItem: null
         }
     },
 
     methods: {
         toggleActive() {
             if (!this.hoverable) this.isActive = !this.isActive
+        },
+
+        itemSelected(item) {
+            console.log('ITEM SELECTED', item)
+        },
+
+        getSelectionHandlers(item) {
+            if (this.hoverable) {
+                return {
+                    mouseover: this.selectItem.bind(this, item)
+                }
+            } else {
+                return {
+                    click: this.selectItem.bind(this, item)
+                }
+            }
         }
     }
 }
